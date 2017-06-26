@@ -205,6 +205,11 @@ export function activate(context: ExtensionContext) {
         rTerm.sendText("install.packages(\"lintr\")");
     }
 
+    function deleteTerminal(term: Terminal) {
+        if (term === rTerm) {
+            rTerm = null; 
+        }  
+    }
 
     context.subscriptions.push(
         commands.registerCommand('r.createRterm', createRterm),
@@ -212,7 +217,8 @@ export function activate(context: ExtensionContext) {
         commands.registerCommand('r.runSelection', runSelection),
         commands.registerCommand('r.createGitignore', createGitignore),
         commands.registerCommand('r.lintr', lintr),
-        commands.registerCommand('r.installLintr', installLintr)
+        commands.registerCommand('r.installLintr', installLintr),
+        window.onDidCloseTerminal(deleteTerminal)
     );
 
     function ToRStringLiteral(s: string, quote: string) {

@@ -17,10 +17,11 @@ Requires [R](https://www.r-project.org/).
 * R Integrated Terminal
 ![Create R terminal](images/terminal.png)
 
+* Extended Syntax(R, R Markdown, R Documentation)
+![Syntax](images/Rsyntax.png)
 * Support [lintr](https://github.com/jimhester/lintr)
 ![lintr](images/lintr.png)
 * Create .gitignore based [R.gitignore](https://github.com/github/gitignore/raw/master/R.gitignore)
-* Support R Documentation and R Markdown
 * Snippets
 
 ## Requirements
@@ -52,5 +53,6 @@ This extension based on
 * [Markdown extension in VS Code](https://github.com/Microsoft/vscode/blob/master/extensions/markdown/snippets/markdown.json)
 * [R.gitignore](https://github.com/github/gitignore/raw/master/R.gitignore)
 * [language-r](https://github.com/lee-dohm/language-r)
+* [R box](https://github.com/randy3k/R-Box)
 
 The R logo is © 2016 The R Foundation

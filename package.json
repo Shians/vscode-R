@@ -1,8 +1,8 @@
 {
   "name": "r",
   "displayName": "R",
-  "description": "Support for R language(run,snippet, lint,R documentation,R Markdown)",
-  "version": "0.3.1",
+  "description": "Support for R language(run,syntax,snippet,lintr)",
+  "version": "0.3.6",
   "author": "Yuki Ueda",
   "license": "SEE LICENSE IN LICENSE",
   "publisher": "Ikuyadeu",
@@ -91,6 +91,11 @@
       }
     ],
     "grammars": [
+      {
+        "language": "r",
+        "scopeName": "source.r",
+        "path": "./syntax/r.json"
+      },
       {
         "language": "rd",
         "scopeName": "text.tex.latex.rd",
@@ -201,7 +206,8 @@
     "@types/node": "^6.0.78",
     "mocha": "^2.3.3",
     "typescript": "^2.3.4",
-    "vscode": "^1.1.0"
+    "vscode": "^1.1.0",
+    "yaml-to-json": "^0.3.0"
   },
   "dependencies": {
     "fs": "0.0.1-security",
